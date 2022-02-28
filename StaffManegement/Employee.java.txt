@@ -1,0 +1,18 @@
+public class Employee {
+
+	String FirstName, LastName;
+	int Age;
+	double MonthlySalary;
+	public Employee(String FirstName, String LastName, int Age, double MonthlySalary) {
+		this.FirstName = FirstName;
+		this.LastName = LastName;
+		this.Age = Age;
+		this.MonthlySalary = MonthlySalary;
+	}
+
+	public String toString() {
+		return "Employee information: " + FirstName + " "+ LastName + ", " + Age + ", "
+				+ MonthlySalary ;
+	}
+
+}

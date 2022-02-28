@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Bonus {
+
+	public static void main(String[] args) {
+		int n = 11;
+		Scanner scan = new Scanner (System.in);
+		for(int i = 1; i < n; i++)
+		{
+			System.out.println("You still have " + (11-i) + " insertions");
+		    Employee [] Employee = new Employee[i];
+		    String FirstName, LastName;
+			int Age;
+			double MonthlySalary;
+			
+			System.out.println("Please input the employee's first name:");
+			FirstName = scan.next();
+			System.out.println("Please input the employee's last name:");
+			LastName = scan.next();
+			System.out.println("Please input the employee's age:");
+			Age = scan.nextInt();
+			System.out.println("Please input the employee's monthly salary");
+			MonthlySalary = scan.nextDouble();
+			Employee E1 = new Employee (FirstName,LastName, Age, MonthlySalary);
+			System.out.println(E1.toString());
+		    
+		}
+		scan.close();
+	}
+
+}

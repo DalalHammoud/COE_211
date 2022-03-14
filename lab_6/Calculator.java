@@ -33,7 +33,6 @@ public class Calculator {
         		break;
         	
         }
-        scanCalc.close();
     }
 
     public String add(int a, int b) {

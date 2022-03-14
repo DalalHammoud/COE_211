@@ -15,13 +15,12 @@ public class Employee {
         firstName = scan.nextLine();
         System.out.println("Please input the employee's last name:");
         lastName = scan.nextLine();
-        scan.hasNextLine();
+
         System.out.println("Please input the employee's age:");
         age = scan.nextInt();
         System.out.println("Please input the employee's monthly salary:");
         salary = scan.nextDouble();
         scan.nextLine();
-        scan.close();
     }
 
     public String toString() {

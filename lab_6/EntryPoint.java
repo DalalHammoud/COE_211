@@ -30,12 +30,16 @@ public class EntryPoint {
 				break;
 			case 4:
 				Employee E = new Employee();
-				E.toString();
+				System.out.println(E.toString());
 				break;
 			}
+			
 			System.out.println("Would you like to perform another operation? (y/n)");
 			scan.nextLine();
 			userInput = scan.next();
+		}
+		if (userInput.equalsIgnoreCase("n")) {
+			System.out.println("Have a good day!!");
 		}
 		scan.close();
 	}
